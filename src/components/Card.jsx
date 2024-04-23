@@ -9,7 +9,7 @@ Card.defaultProps={
     age:99};
     
 function Card(props) {
-    // let champ={qualif:props.champion.qualif,age:props.champion.age,isActif:props.champion.isActif};
+    
    
     return (
         <>
@@ -21,7 +21,7 @@ function Card(props) {
                 <div className="card-body">
                     {/*<p className="card-title">{champion.qualif}</p>*/}
                     
-                    <Details champion={props.champion}/>
+                    <Details id={props.champion.id} qualif={props.champion.qualif} isActif={props.champion.isActif} age={props.champion.age} />
                     
                     
                 </div>
