@@ -3,9 +3,10 @@ import { useState } from 'react'
 import Card from './components/Card'
 import Header from './components/Header'
 import {info} from "./components/info.jsx"
+import React,{Component} from "react";
 
-function App() {
-  
+class App extends Component  {
+  render(){
 
   return (
     <>
@@ -19,7 +20,9 @@ function App() {
       </div>
       </div>
     </>
+    
   )
+}
 }
 
 export default App;
